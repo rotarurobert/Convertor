@@ -1,0 +1,14 @@
+﻿  Source.cpp
+c:\users\home\documents\visual studio 2015\projects\convertor\convertor\source.cpp(5): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\home\documents\visual studio 2015\projects\convertor\convertor\source.cpp(15): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\home\documents\visual studio 2015\projects\convertor\convertor\source.cpp(20): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\home\documents\visual studio 2015\projects\convertor\convertor\source.cpp(25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\home\documents\visual studio 2015\projects\convertor\convertor\source.cpp(30): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\home\documents\visual studio 2015\projects\convertor\convertor\source.cpp(35): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\home\documents\visual studio 2015\projects\convertor\convertor\source.cpp(45): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\home\documents\visual studio 2015\projects\convertor\convertor\source.cpp(50): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\home\documents\visual studio 2015\projects\convertor\convertor\source.cpp(55): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\home\documents\visual studio 2015\projects\convertor\convertor\source.cpp(60): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\home\documents\visual studio 2015\projects\convertor\convertor\source.cpp(70): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Convertor.vcxproj -> C:\Users\home\documents\visual studio 2015\Projects\Convertor\Debug\Convertor.exe
+  Convertor.vcxproj -> C:\Users\home\documents\visual studio 2015\Projects\Convertor\Debug\Convertor.pdb (Partial PDB)
