@@ -1,78 +1,80 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
-float CmToM(float x)
+long double CmToM(long double x)
 {
 	x = x*0.01;
 	return x;
 }
-float KmToM(float x)
+long double KmToM(long double x)
 {
 	x = x * 1000;
 	return x;
 }
-float MiToM(float x)
+long double MiToM(long double x)
 {
 	x = x * 1609.344;
 	return x;
 }
-float FtToM(float x)
+long double FtToM(long double x)
 {
 	x = x * 0.3048;
 	return x;
 }
-float InToM(float x)
+long double InToM(long double x)
 {
 	x = x*0.0254;
 	return x;
 }
-float MmToM(float x)
+long double MmToM(long double x)
 {
 	x = x*0.001;
 	return x;
 }
-float YdToM(float x)
+long double YdToM(long double x)
 {
 	x = x*0.9144002494;
 	return x;
 }
-float MToCm(float x)
+long double MToCm(long double x)
 {
 	x = x * 100;
 	return x;
 }
-float MToKm(float x)
+long double MToKm(long double x)
 {
 	x = x*0.001;
 	return x;
 }
-float MtoMi(float x)
+long double MToMi(long double x)
 {
 	x = x*0.00062;
 	return x;
 }
-float MToFt(float x)
+long double MToFt(long double x)
 {
 	x = x*3.280839;
 	return x;
 }
-float MToIn(float x)
+long double MToIn(long double x)
 {
 	x = x*39.370078;
 	return x;
 }
-float MToMm(float x)
+long double MToMm(long double x)
 {
 	x = x * 1000;
 	return x;
 }
-float MToYd(float x)
+long double MToYd(long double x)
 {
 	x = x*1.093613;
 	return x;
 }
 int main()
 {
-	int option,ok=1;
+	int option,ok=1,option1,option2;
+	long double x;
 	while (ok)
 	{
 		cout << "1.Lungime" << endl;
@@ -93,6 +95,190 @@ int main()
 			system("cls");
 			cout << "Lungime" << endl;
 			cout << "Alege unitatea de masura:" << endl;
+			cout << "1.Metri\n";
+			cout << "2.Centimetri\n";
+			cout << "3.Kilometri\n";
+			cout << "4.Milimetri\n";
+			cout << "5.Mile\n";
+			cout << "6.Picioare(Feets)\n";
+			cout << "7.Inch\n";
+			cout << "8.Yard\n";
+			cin >> option1;
+			switch (option1)
+			{
+			case 1:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Centimetri\n";
+				cout << "2.Kilometri\n";
+				cout << "3.Milimetri\n";
+				cout << "4.Mile\n";
+				cout << "5.Picioare(Feets)\n";
+				cout << "6.Inch\n";
+				cout << "7.Yard\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii = " << fixed << setprecision(6) << MToCm(x) << " centimetrii\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii = " << fixed << setprecision(6) << MToKm(x) << " kilometrii\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii = " << fixed << setprecision(6) << MToMm(x) << " milimetrii\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii = " << fixed << setprecision(6) << MToMi(x) << " mile\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii = " << fixed << setprecision(6) << MToFt(x) << " picioare\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii = " <<fixed<<setprecision(6)<< MToIn(x) << " inch\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii = " << fixed << setprecision(6) << MToYd(x) << " yard\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 2:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metri\n";
+				cout << "2.Kilometri\n";
+				cout << "3.Milimetri\n";
+				cout << "4.Mile\n";
+				cout << "5.Picioare(Feets)\n";
+				cout << "6.Inch\n";
+				cout << "7.Yard\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " centimetrii = " << fixed << setprecision(6) << CmToM(x) << " metrii\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " centimetrii = " << fixed << setprecision(6) << CmToM(MToKm(x)) << " kilometrii\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " centimetrii = " << fixed << setprecision(6) << CmToM(MToMm(x)) << " milimetrii\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " centimetrii = " << fixed << setprecision(6) << CmToM(MToMi(x)) << " mile\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " centimetrii = " << fixed << setprecision(6) << CmToM(MToFt(x)) << " picioare\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " centimetrii = " << fixed << setprecision(6) << CmToM(MToIn(x)) << " inch\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " centimetrii = " << fixed << setprecision(6) << CmToM(MToYd(x)) << " yard\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 3:
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metri\n";
+				cout << "2.Centimetri\n";
+				cout << "3.Milimetri\n";
+				cout << "4.Mile\n";
+				cout << "5.Picioare(Feets)\n";
+				cout << "6.Inch\n";
+				cout << "7.Yard\n";
+				break;
+			case 4:
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metri\n";
+				cout << "2.Centimetri\n";
+				cout << "3.Kilometri\n";
+				cout << "4.Mile\n";
+				cout << "5.Picioare(Feets)\n";
+				cout << "6.Inch\n";
+				cout << "7.Yard\n";
+				break;
+			case 5:
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metri\n";
+				cout << "2.Centimetri\n";
+				cout << "3.Kilometri\n";
+				cout << "4.Milimetri\n";
+				cout << "5.Picioare(Feets)\n";
+				cout << "6.Inch\n";
+				cout << "7.Yard\n";
+				break;
+			case 6:
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metri\n";
+				cout << "2.Centimetri\n";
+				cout << "3.Kilometri\n";
+				cout << "4.Milimetri\n";
+				cout << "5.Mile\n";
+				cout << "6.Inch\n";
+				cout << "7.Yard\n";
+				break;
+			case 7:
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metri\n";
+				cout << "2.Centimetri\n";
+				cout << "3.Kilometri\n";
+				cout << "4.Milimetri\n";
+				cout << "5.Mile\n";
+				cout << "6.Picioare(Feets)\n";
+				cout << "7.Yard\n";
+				break;
+			case 8:
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metri\n";
+				cout << "2.Centimetri\n";
+				cout << "3.Kilometri\n";
+				cout << "4.Milimetri\n";
+				cout << "5.Mile\n";
+				cout << "6.Picioare(Feets)\n";
+				cout << "7.Inch\n";
+				break;
+			default:
+				system("cls");
+				cout << "alegere incorecta" << endl;
+				break;
+			}
 			break;
 		case 2:
 			system("cls");
