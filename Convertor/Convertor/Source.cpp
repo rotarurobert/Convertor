@@ -118,6 +118,51 @@ long double Yd2ToM2(long double x)
 	x = x*0.836127816;
 	return x;
 }
+long double M2ToAr(long double x)
+{
+	x = x*0.01;
+	return x;
+}
+long double M2ToAc(long double x)
+{
+	x = x*0.00024710539999309525;
+	return x;
+}
+long double M2ToCm2(long double x)
+{
+	x = x * 10000;
+	return x;
+}
+long double M2ToFt2(long double x)
+{
+	x = x*10.764262648008613;
+	return x;
+}
+long double M2ToHa(long double x)
+{
+	x = x*0.0001;
+	return x;
+}
+long double M2ToIn2(long double x)
+{
+	x = x*1549.9070055796653;
+	return x;
+}
+long double M2ToKm2(long double x)
+{
+	x = x*0.000001;
+	return x;
+}
+long double M2ToMm2(long double x)
+{
+	x = x * 1000000;
+	return x;
+}
+long double M2ToYd2(long double x)
+{
+	x = x*1.195989394042597;
+	return x;
+}
 int main()
 {
 	int option,ok=1,option1,option2,option3;
@@ -596,6 +641,684 @@ int main()
 			system("cls");
 			cout << "Arie" << endl;
 			cout << "Alege unitatea de masura:\n";
+			cout << "1.Metru patrat\n";
+			cout << "2.Ar\n";
+			cout << "3.Acru\n";
+			cout << "4.Centimetru patrat\n";
+			cout << "5.Picior patrat\n";
+			cout << "6.Hectari\n";
+			cout << "7.Tol patrat(square inch)\n";
+			cout << "8.Kilometru patrat\n";
+			cout << "9.Milimetru patrat\n";
+			cout << "10.Yard patrat\n";
+			cin >> option1;
+			switch (option1)
+			{
+			case 1:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Ar\n";
+				cout << "2.Acru\n";
+				cout << "3.Centimetru patrat\n";
+				cout << "4.Picior patrat\n";
+				cout << "5.Hectari\n";
+				cout << "6.Tol patrat(square inch)\n";
+				cout << "7.Kilometru patrat\n";
+				cout << "8.Milimetru patrat\n";
+				cout << "9.Yard patrat\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii patrati =" << M2ToAr(x) << " ari\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii patrati =" << M2ToAc(x) << " acri\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii patrati =" << M2ToCm2(x) << " centimetrii patrati\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii patrati =" << M2ToFt2(x) << " picioare patrate\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii patrati =" << M2ToHa(x) << " hectare\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii patrati =" << M2ToIn2(x) << " toli patrati\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii patrati =" << M2ToKm2(x) << " kilometrii patrati\n";
+					break;
+				case 8:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii patrati =" << M2ToMm2(x) << " milimetrii patrati\n";
+					break;
+				case 9:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii patrati =" << M2ToYd2(x) << " yarzi patrati\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 2:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru patrat\n";
+				cout << "2.Acru\n";
+				cout << "3.Centimetru patrat\n";
+				cout << "4.Picior patrat\n";
+				cout << "5.Hectari\n";
+				cout << "6.Tol patrat(square inch)\n";
+				cout << "7.Kilometru patrat\n";
+				cout << "8.Milimetru patrat\n";
+				cout << "9.Yard patrat\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ari =" << ArToM2(x) << " metrii patrati\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ari" << ArToM2(M2ToAc(x)) << " acri\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ari" << ArToM2(M2ToCm2(x)) << " centimetrii patrati\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ari" << ArToM2(M2ToFt2(x)) << " picioare patrate\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ari" << ArToM2(M2ToHa(x)) << " hectare\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ari" << ArToM2(M2ToIn2(x)) << " toli patrati\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ari" << ArToM2(M2ToKm2(x)) << " kilometrii patrati\n";
+					break;
+				case 8:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ari" << ArToM2(M2ToMm2(x)) << " milimetrii patrati\n";
+					break;
+				case 9:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ari" << ArToM2(M2ToYd2(x)) << " yarzi patrati\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 3:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru patrat\n";
+				cout << "2.Ar\n";
+				cout << "3.Centimetru patrat\n";
+				cout << "4.Picior patrat\n";
+				cout << "5.Hectari\n";
+				cout << "6.Tol patrat(square inch)\n";
+				cout << "7.Kilometru patrat\n";
+				cout << "8.Milimetru patrat\n";
+				cout << "9.Yard patrat\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " acri =" << AcToM2(x) << " metrii patrati\n"; 
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " acri =" << AcToM2(M2ToAr(x)) << " ari\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " acri =" << AcToM2(M2ToCm2(x)) << " centimetrii patrati\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " acri =" << AcToM2(M2ToFt2(x)) << " picioare patrate\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " acri =" << AcToM2(M2ToHa(x)) << " hectare\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " acri =" << AcToM2(M2ToIn2(x)) << " toli patrati\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " acri =" << AcToM2(M2ToKm2(x)) << " kilometrii patrati\n";
+					break;
+				case 8:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " acri =" << AcToM2(M2ToMm2(x))<< " milimetrii patrati\n";
+					break;
+				case 9:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " acri =" << AcToM2(M2ToYd2(x)) << " yarzi patrati\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 4:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru patrat\n";
+				cout << "2.Ar\n";
+				cout << "3.Acru\n";
+				cout << "4.Picior patrat\n";
+				cout << "5.Hectari\n";
+				cout << "6.Tol patrat(square inch)\n";
+				cout << "7.Kilometru patrat\n";
+				cout << "8.Milimetru patrat\n";
+				cout << "9.Yard patrat\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " centimetrii patrati =" << Cm2ToM2(x) << " metrii patrati\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " centimetrii patrati =" << Cm2ToM2(M2ToAr(x)) << " ari\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " centimetrii patrati =" << Cm2ToM2(M2ToAc(x)) << " acri\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " centimetrii patrati =" << Cm2ToM2(M2ToFt2(x)) << " picioare patrate\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " centimetrii patrati =" << Cm2ToM2(M2ToHa(x)) << " hectare\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " centimetrii patrati =" << Cm2ToM2(M2ToIn2(x)) << " toli patrati\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " centimetrii patrati =" << Cm2ToM2(M2ToKm2(x)) << " kilometrii patrati\n";
+					break;
+				case 8:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " centimetrii patrati =" << Cm2ToM2(M2ToMm2(x)) << " milimetrii patrati\n";
+					break;
+				case 9:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " centimetrii patrati =" << Cm2ToM2(M2ToYd2(x)) << " yarzi patrati\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 5:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru patrat\n";
+				cout << "2.Ar\n";
+				cout << "3.Acru\n";
+				cout << "4.Centimetru patrat\n";
+				cout << "5.Hectari\n";
+				cout << "6.Tol patrat(square inch)\n";
+				cout << "7.Kilometru patrat\n";
+				cout << "8.Milimetru patrat\n";
+				cout << "9.Yard patrat\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare patrate =" << Ft2ToM2(x) << " metrii patrati\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare patrate =" << Ft2ToM2(M2ToAc(x)) << " ari\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare patrate =" << Ft2ToM2(M2ToAc(x)) << " acri\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare patrate =" << Ft2ToM2(M2ToCm2(x)) << " centimetrii patrati\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare patrate =" << Ft2ToM2(M2ToHa(x)) << " hectare\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare patrate =" << Ft2ToM2(M2ToIn2(x)) << " toli patrati\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare patrate =" << Ft2ToM2(M2ToKm2(x)) << " kilometrii patrati\n";
+					break;
+				case 8:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare patrate =" << Ft2ToM2(M2ToMm2(x)) << " milimetrii patrati\n";
+					break;
+				case 9:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare patrate =" << Ft2ToM2(M2ToYd2(x)) << " yarzi patrati\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 6:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru patrat\n";
+				cout << "2.Ar\n";
+				cout << "3.Acru\n";
+				cout << "4.Centimetru patrat\n";
+				cout << "5.Picior patrat\n";
+				cout << "6.Tol patrat(square inch)\n";
+				cout << "7.Kilometru patrat\n";
+				cout << "8.Milimetru patrat\n";
+				cout << "9.Yard patrat\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " hectare =" << HaToM2(x) << " metrii patrati\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " hectare =" << HaToM2(M2ToAr(x)) << " ari\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " hectare =" << HaToM2(M2ToAc(x)) << " acri\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " hectare =" << HaToM2(M2ToCm2(x)) << " centimetrii patrati\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " hectare =" << HaToM2(M2ToFt2(x)) << " picioare patrate\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " hectare =" << HaToM2(M2ToIn2(x)) << " toli patrati\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " hectare =" << HaToM2(M2ToKm2(x)) << " kilometrii patrati\n";
+					break;
+				case 8:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " hectare =" << HaToM2(M2ToMm2(x)) << " milimetrii patrati\n";
+					break;
+				case 9:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " hectare =" << HaToM2(M2ToYd2(x)) << " yarzi patrati\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 7:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru patrat\n";
+				cout << "2.Ar\n";
+				cout << "3.Acru\n";
+				cout << "4.Centimetru patrat\n";
+				cout << "5.Picior patrat\n";
+				cout << "6.Hectari\n";
+				cout << "7.Kilometru patrat\n";
+				cout << "8.Milimetru patrat\n";
+				cout << "9.Yard patrat\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " toli patrati =" << In2ToM2(x) << " metrii patrati\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " toli patrati =" << In2ToM2(M2ToAr(x)) << " ari\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " toli patrati =" << In2ToM2(M2ToAc(x)) << " acri\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " toli patrati =" << In2ToM2(M2ToCm2(x)) << " centimetrii patrati\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " toli patrati =" << In2ToM2(M2ToFt2(x)) << " picioare patrate\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " toli patrati =" << In2ToM2(M2ToHa(x)) << " hectare\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " toli patrati =" << In2ToM2(M2ToKm2(x)) << " kilometrii patrati\n";
+					break;
+				case 8:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " toli patrati =" << In2ToM2(M2ToMm2(x)) << " milimetrii patrati\n";
+					break;
+				case 9:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " toli patrati =" << In2ToM2(M2ToYd2(x)) << " yarzi patrati\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 8:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru patrat\n";
+				cout << "2.Ar\n";
+				cout << "3.Acru\n";
+				cout << "4.Centimetru patrat\n";
+				cout << "5.Picior patrat\n";
+				cout << "6.Hectari\n";
+				cout << "7.Tol patrat(square inch)\n";
+				cout << "8.Milimetru patrat\n";
+				cout << "9.Yard patrat\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilometrii patrati =" << Km2ToM2(x) << " metrii patrati\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilometrii patrati =" << Km2ToM2(M2ToAr(x)) << " ari\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilometrii patrati =" << Km2ToM2(M2ToAc(x)) << " acri\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilometrii patrati =" << Km2ToM2(M2ToCm2(x)) << " centimetrii patrati\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilometrii patrati =" << Km2ToM2(M2ToFt2(x)) << " picioare patrate\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilometrii patrati =" << Km2ToM2(M2ToHa(x)) << " hectare\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilometrii patrati =" << Km2ToM2(M2ToIn2(x)) << " toli patrati\n";
+					break;
+				case 8:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilometrii patrati =" << Km2ToM2(M2ToMm2(x)) << " milimetrii patrati\n";
+					break;
+				case 9:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilometrii patrati =" << Km2ToM2(M2ToYd2(x)) << " yarzi patrati\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 9:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru patrat\n";
+				cout << "2.Ar\n";
+				cout << "3.Acru\n";
+				cout << "4.Centimetru patrat\n";
+				cout << "5.Picior patrat\n";
+				cout << "6.Hectari\n";
+				cout << "7.Tol patrat(square inch)\n";
+				cout << "8.Kilometru patrat\n";
+				cout << "9.Yard patrat\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milimetrii patrati =" << Mm2ToM2(x) << " metrii patrati\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milimetrii patrati =" << Mm2ToM2(M2ToAr(x)) << " ari\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milimetrii patrati =" << Mm2ToM2(M2ToAc(x)) << " acri\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milimetrii patrati =" << Mm2ToM2(M2ToCm2(x)) << " centimetrii patrati\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milimetrii patrati =" << Mm2ToM2(M2ToFt2(x)) << " picioare patrate\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milimetrii patrati =" << Mm2ToM2(M2ToHa(x)) << " hectare\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milimetrii patrati =" << Mm2ToM2(M2ToIn2(x)) << " toli patrati\n";
+					break;
+				case 8:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milimetrii patrati =" << Mm2ToM2(M2ToKm2(x)) << " kilometrii patrati\n";
+					break;
+				case 9:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milimetrii patrati =" << Mm2ToM2(M2ToYd2(x)) << " yarzi patrati\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 10:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru patrat\n";
+				cout << "2.Ar\n";
+				cout << "3.Acru\n";
+				cout << "4.Centimetru patrat\n";
+				cout << "5.Picior patrat\n";
+				cout << "6.Hectari\n";
+				cout << "7.Tol patrat(square inch)\n";
+				cout << "8.Kilometru patrat\n";
+				cout << "9.Milimetru patrat\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi patrati =" << Yd2ToM2(x) << " metrii patrati\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi patrati =" << Yd2ToM2(M2ToAr(x)) << " ari\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi patrati =" << Yd2ToM2(M2ToAc(x)) << " acri\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi patrati =" << Yd2ToM2(M2ToCm2(x)) << " centimetrii patrati\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi patrati =" << Yd2ToM2(M2ToFt2(x)) << " picioare patrate\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi patrati =" << Yd2ToM2(M2ToHa(x)) << " hectare\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi patrati =" << Yd2ToM2(M2ToIn2(x)) << " toli patrati\n";
+					break;
+				case 8:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi patrati =" << Yd2ToM2(M2ToKm2(x)) << " kilometrii patrati\n";
+					break;
+				case 9:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi patrati =" << Yd2ToM2(M2ToMm2(x)) << " milimetrii patrati\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			default:
+				system("cls");
+				cout << "alegere incorecta" << endl;
+				break;
+			}
 			break;
 		case 3:
 			system("cls");
@@ -658,4 +1381,3 @@ int main()
 	system("pause");
 	return 0;
 }
-
