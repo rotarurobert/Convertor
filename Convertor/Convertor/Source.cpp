@@ -163,6 +163,86 @@ long double M2ToYd2(long double x)
 	x = x*1.195989394042597;
 	return x;
 }
+long double ClToM3(long double x)
+{
+	x = x*0.00001;
+	return x;
+}
+long double Cm3ToM3(long double x)
+{
+	x = x*0.000001;
+	return x;
+}
+long double Dm3ToM3(long double x)
+{
+	x = x*0.001;
+	return x;
+}
+long double Ft3ToM3(long double x)
+{
+	x = x*0.02832;
+	return x;
+}
+long double GToM3(long double x)
+{
+	x = x*0.003785;
+	return x;
+}
+long double In3ToM3(long double x)
+{
+	x = x*0.000016387064;
+	return x;
+}
+long double Yd3ToM3(long double x)
+{
+	x = x*0.76456;
+	return x;
+}
+long double DlToM3(long double x)
+{
+	x = x*0.0001;
+	return x;
+}
+long double M3ToCl(long double x)
+{
+	x = x * 100000;
+	return x;
+}
+long double M3ToCm3(long double x)
+{
+	x = x * 1000000;
+	return x;
+}
+long double M3ToDl(long double x)
+{
+	x = x * 10000;
+	return x;
+}
+long double M3ToDm3(long double x)
+{
+	x = x * 1000;
+	return x;
+}
+long double M3ToFt3(long double x)
+{
+	x = x*35.31073446327684;
+	return x;
+}
+long double M3ToG(long double x)
+{
+	x = x*264.2007926023778;
+	return x;
+}
+long double M3ToIn3(long double x)
+{
+	x = x*61023.74409473229;
+	return x;
+}
+long double M3ToYd3(long double x)
+{
+	x = x*1.3079418227477242;
+	return x;
+}
 int main()
 {
 	int option,ok=1,option1,option2,option3;
@@ -1324,6 +1404,455 @@ int main()
 			system("cls");
 			cout << "Volum" << endl;
 			cout << "Alege unitatea de masura:\n";
+			cout << "1.Metru cub\n";
+			cout << "2.Litru(Decimetru cub)\n";
+			cout << "3.Mililitru(centimetru cub)\n";
+			cout << "4.Decilitru\n";
+			cout << "5.Picior cub\n";
+			cout << "6.Galon\n";
+			cout << "7.Tol cub\n";
+			cout << "8.Yard cub\n";
+			cin >> option1;
+			switch (option1)
+			{
+			case 1:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Litru(Decimetru cub)\n";
+				cout << "2.Mililitru(centimetru cub)\n";
+				cout << "3.Decilitru\n";
+				cout << "4.Picior cub\n";
+				cout << "5.Galon\n";
+				cout << "6.Tol cub\n";
+				cout << "7.Yard cub\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii cubi =" << M3ToDm3(x) << " litrii\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii cubi =" << M3ToCm3(x) << " mililitrii\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii cubi =" << M3ToDl(x) << " decilitrii\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii cubi =" << M3ToFt3(x) << " picioare cubi\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii cubi =" << M3ToG(x) << " galoni\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii cubi =" << M3ToIn3(x) << " toli cubi\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii cubi =" << M3ToYd3(x) << " yarzi cubi\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 2:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru cub\n";
+				cout << "2.Mililitru(centimetru cub)\n";
+				cout << "3.Decilitru\n";
+				cout << "4.Picior cub\n";
+				cout << "5.Galon\n";
+				cout << "6.Tol cub\n";
+				cout << "7.Yard cub\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " litrii =" << Dm3ToM3(x) << " metrii cubi\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " litrii =" << Dm3ToM3(M3ToCm3(x)) << " mililitrii\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " litrii =" << Dm3ToM3(M3ToDl(x)) << " decilitrii\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " litrii =" << Dm3ToM3(M3ToFt3(x)) << " picioare cubi\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " litrii =" << Dm3ToM3(M3ToG(x)) << " galoni\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " litrii =" << Dm3ToM3(M3ToIn3(x)) << " toli cubi\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " litrii =" << Dm3ToM3(M3ToYd3(x)) << " yarzi cubi\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 3:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru cub\n";
+				cout << "2.Litru(Decimetru cub)\n";
+				cout << "3.Decilitru\n";
+				cout << "4.Picior cub\n";
+				cout << "5.Galon\n";
+				cout << "6.Tol cub\n";
+				cout << "7.Yard cub\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mililitrii =" << Cm3ToM3(x) << " metrii cubi\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mililitrii =" << Cm3ToM3(M3ToDm3(x)) << " litrii\n";
+					break;
+
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mililitrii =" << Cm3ToM3(M3ToDl(x)) << " decilitrii\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mililitrii =" << Cm3ToM3(M3ToFt3(x)) << " picioare cubi\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mililitrii =" << Cm3ToM3(M3ToG(x)) << " galoni\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mililitrii =" << Cm3ToM3(M3ToIn3(x)) << " toli cubi\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mililitrii =" << Cm3ToM3(M3ToYd3(x)) << " yarzi cubi\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 4:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru cub\n";
+				cout << "2.Litru(Decimetru cub)\n";
+				cout << "3.Mililitru(centimetru cub)\n";
+				cout << "4.Picior cub\n";
+				cout << "5.Galon\n";
+				cout << "6.Tol cub\n";
+				cout << "7.Yard cub\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " decilitrii =" << DlToM3(x) << " metrii cubi\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " decilitrii =" << DlToM3(M3ToDm3(x)) << " litrii\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " decilitrii =" << DlToM3(M3ToCm3(x)) << " mililitrii\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " decilitrii =" << DlToM3(M3ToFt3(x)) << " picioare cubi\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " decilitrii =" << DlToM3(M3ToG(x)) << " galoni\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " decilitrii =" << DlToM3(M3ToIn3(x)) << " toli cubi\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " decilitrii =" << DlToM3(M3ToYd3(x)) << " yarzi cubi\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 5:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru cub\n";
+				cout << "2.Litru(Decimetru cub)\n";
+				cout << "3.Mililitru(centimetru cub)\n";
+				cout << "4.Decilitru\n";
+				cout << "5.Galon\n";
+				cout << "6.Tol cub\n";
+				cout << "7.Yard cub\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare cubi =" << Ft3ToM3(x) << " picioare cubi\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare cubi =" << Ft3ToM3(M3ToDm3(x)) << " litrii\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare cubi =" << Ft3ToM3(M3ToCm3(x)) << " mililitrii\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare cubi =" << Ft3ToM3(M3ToDl(x)) << " decilitrii\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare cubi =" << Ft3ToM3(M3ToG(x)) << " galoni\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare cubi =" << Ft3ToM3(M3ToIn3(x)) << " toli cubi\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare cubi =" << Ft3ToM3(M3ToYd3(x)) << " yarzi cubi\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 6:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru cub\n";
+				cout << "2.Litru(Decimetru cub)\n";
+				cout << "3.Mililitru(centimetru cub)\n";
+				cout << "4.Decilitru\n";
+				cout << "5.Picior cub\n";
+				cout << "6.Tol cub\n";
+				cout << "7.Yard cub\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " galoni =" << GToM3(x) << " metrii cubi\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " galoni =" << GToM3(M3ToDm3(x)) << " litrii\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " galoni =" << GToM3(M3ToCm3(x)) << " mililitrii\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " galoni =" << GToM3(M3ToDl(x)) << " decilitrii\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " galoni =" << GToM3(M3ToFt3(x)) << " picioare cubi\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " galoni =" << GToM3(M3ToIn3(x)) << " toli cubi\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " galoni =" << GToM3(M3ToYd3(x)) << " yarzi cubi\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 7:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru cub\n";
+				cout << "2.Litru(Decimetru cub)\n";
+				cout << "3.Mililitru(centimetru cub)\n";
+				cout << "4.Decilitru\n";
+				cout << "5.Picior cub\n";
+				cout << "6.Galon\n";
+				cout << "7.Yard cub\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " toli cubi =" << In3ToM3(x) << " metrii cubi\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " toli cubi =" << In3ToM3(M3ToDm3(x)) << " litrii\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " toli cubi =" << In3ToM3(M3ToCm3(x)) << " mililitrii\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " toli cubi =" << In3ToM3(M3ToDl(x)) << " decilitrii\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " toli cubi =" << In3ToM3(M3ToFt3(x)) << " picioare cubi\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " toli cubi =" << In3ToM3(M3ToG(x)) << " galoni\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " toli cubi =" << In3ToM3(M3ToYd3(x)) << " yarzi cubi\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 8:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru cub\n";
+				cout << "2.Litru(Decimetru cub)\n";
+				cout << "3.Mililitru(centimetru cub)\n";
+				cout << "4.Decilitru\n";
+				cout << "5.Picior cub\n";
+				cout << "6.Galon\n";
+				cout << "7.Tol cub\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi cubi =" << Yd3ToM3(x) << " metrii cubi\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi cubi =" << Yd3ToM3(M3ToDm3(x)) << " litrii\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi cubi =" << Yd3ToM3(M3ToCm3(x)) << " mililitrii\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi cubi =" << Yd3ToM3(M3ToDl(x)) << " decilitrii\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi cubi =" << Yd3ToM3(M3ToFt3(x)) << " picioare cubi\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi cubi =" << Yd3ToM3(M3ToG(x)) << " galoni\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi cubi =" << Yd3ToM3(M3ToIn3(x)) << " toli cubi\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			default:
+				system("cls");
+				cout << "alegere incorecta" << endl;
+				break;
+			}
 			break;
 		case 4:
 			system("cls");
