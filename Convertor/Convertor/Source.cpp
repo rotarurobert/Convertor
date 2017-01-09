@@ -243,6 +243,76 @@ long double M3ToYd3(long double x)
 	x = x*1.3079418227477242;
 	return x;
 }
+long double SToMin(long double x)
+{
+	x = x*0.016666666666666666;
+	return x;
+}
+long double SToH(long double x)
+{
+	x = x*0.0002777777777777778;
+	return x;
+}
+long double SToD(long double x)
+{
+	x = x*0.000011574074074074073;
+	return x;
+}
+long double SToW(long double x)
+{
+	x = x*0.0000016534391534391535;
+	return x;
+}
+long double SToM(long double x)
+{
+	x = x*0.000000380517503805175;
+	return x;
+}
+long double SToY(long double x)
+{
+	x = x*0.000000031709791983764586;
+	return x;
+}
+long double SToMs(long double x)
+{
+	x = x * 1000;
+	return x;
+}
+long double YToS(long double x)
+{
+	x = x * 31536000;
+	return x;
+}
+long double MToS(long double x)
+{
+	x = x * 2628000;
+	return x;
+}
+long double WToS(long double x)
+{
+	x = x * 604800;
+	return x;
+}
+long double DToS(long double x)
+{
+	x = x * 86400;
+	return x;
+}
+long double HToS(long double x)
+{
+	x = x * 3600;
+	return x;
+}
+long double MinToS(long double x)
+{
+	x = x * 60;
+	return x;
+}
+long double MsToS(long double x)
+{
+	x = x*0.001;
+	return x;
+}
 int main()
 {
 	int option,ok=1,option1,option2,option3;
@@ -1858,6 +1928,455 @@ int main()
 			system("cls");
 			cout << "Timp" << endl;
 			cout << "Alege unitatea de masura:\n";
+			cout << "1.Secunda\n";
+			cout << "2.Minut\n";
+			cout << "3.Ora\n";
+			cout << "4.Zi\n";
+			cout << "5.Saptamana\n";
+			cout << "6.Luna\n";
+			cout << "7.An\n";
+			cout << "8.Milisecunda\n";
+			cin >> option1;
+			switch (option1)
+			{
+			case 1:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Minut\n";
+				cout << "2.Ora\n";
+				cout << "3.Zi\n";
+				cout << "4.Saptamana\n";
+				cout << "5.Luna\n";
+				cout << "6.An\n";
+				cout << "7.Milisecunda\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " secunde =" << SToMin(x) << " minute\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " secunde =" << SToH(x) << " ore\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " secunde =" << SToD(x) << " zile\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " secunde =" << SToW(x) << " saptamani\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " secunde =" << SToM(x) << " luni\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " secunde =" << SToY(x) << " ani\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " secunde =" << SToMs(x) << " milisecunde\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 2:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Secunda\n";
+				cout << "2.Ora\n";
+				cout << "3.Zi\n";
+				cout << "4.Saptamana\n";
+				cout << "5.Luna\n";
+				cout << "6.An\n";
+				cout << "7.Milisecunda\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " minute =" << MinToS(x) << " secunde\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " minute =" << MinToS(SToH(x)) << " ore\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " minute =" << MinToS(SToD(x)) << " zile\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " minute =" << MinToS(SToW(x)) << " saptamani\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " minute =" << MinToS(SToM(x)) << " luni\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " minute =" << MinToS(SToY(x)) << " ani\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " minute =" << MinToS(SToMs(x)) << " milisecunde\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 3:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Secunda\n";
+				cout << "2.Minut\n";
+				cout << "3.Zi\n";
+				cout << "4.Saptamana\n";
+				cout << "5.Luna\n";
+				cout << "6.An\n";
+				cout << "7.Milisecunda\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ore =" << HToS(x) << " ore\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ore =" << HToS(SToMin(x)) << " minute\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ore =" << HToS(SToD(x)) << " zile\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ore =" << HToS(SToW(x)) << " saptamani\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ore =" << HToS(SToM(x)) << " luni\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ore =" << HToS(SToY(x)) << " ani\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ore =" << HToS(SToMs(x)) << " milisecunde\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 4:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Secunda\n";
+				cout << "2.Minut\n";
+				cout << "3.Ora\n";
+				cout << "4.Saptamana\n";
+				cout << "5.Luna\n";
+				cout << "6.An\n";
+				cout << "7.Milisecunda\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " zile =" << DToS(x) << " secunde\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " zile =" << DToS(SToMin(x)) << " minute\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " zile =" << DToS(SToH(x)) << " ore\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " zile =" << DToS(SToW(x)) << " saptamani\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " zile =" << DToS(SToM(x)) << " luni\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " zile =" << DToS((x)) << " ani\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " zile =" << DToS(SToMs(x)) << " milisecunde\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 5:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Secunda\n";
+				cout << "2.Minut\n";
+				cout << "3.Ora\n";
+				cout << "4.Zi\n";
+				cout << "5.Luna\n";
+				cout << "6.An\n";
+				cout << "7.Milisecunda\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " saptamani =" << WToS(x) << " secunde\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " saptamani =" << WToS(SToMin(x)) << " minute\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " saptamani =" << WToS(SToH(x))<< " ore\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " saptamani =" << WToS(SToD(x)) << " zile\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " saptamani =" << WToS(SToM(x)) << " luni\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " saptamani =" << WToS(SToY(x)) << " ani\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " saptamani =" << WToS(SToMs(x)) << " milisecunde\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 6:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Secunda\n";
+				cout << "2.Minut\n";
+				cout << "3.Ora\n";
+				cout << "4.Zi\n";
+				cout << "5.Saptamana\n";
+				cout << "6.Luna\n";
+				cout << "7.An\n";
+				cout << "8.Milisecunda\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " luni =" << MToS(x) << " secunde\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " luni =" << MToS(SToMin(x)) << " minute\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " luni =" << MToS(SToH(x)) << " ore\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " luni =" << MToS(SToD(x)) << " zile\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " luni =" << MToS(SToW(x)) << " saptamani\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " luni =" << MToS(SToY(x)) << " ani\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " luni =" << MToS(SToMs(x)) << " milisecunde\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 7:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Secunda\n";
+				cout << "2.Minut\n";
+				cout << "3.Ora\n";
+				cout << "4.Zi\n";
+				cout << "5.Saptamana\n";
+				cout << "6.Luna\n";
+				cout << "7.Milisecunda\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ani =" << YToS(x) << " secunde\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ani =" << YToS(SToMin(x)) << " minute\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ani =" << YToS(SToH(x)) << " ore\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ani =" << YToS(SToD(x)) << " zile\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ani =" << YToS(SToW(x)) << " saptamani\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ani =" << YToS(SToM(x)) << " luni\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " ani =" << YToS(SToMs(x)) << " milisecunde\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 8:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Secunda\n";
+				cout << "2.Minut\n";
+				cout << "3.Ora\n";
+				cout << "4.Zi\n";
+				cout << "5.Saptamana\n";
+				cout << "6.Luna\n";
+				cout << "7.An\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milisecunde =" << MsToS(x) << " secunde\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milisecunde =" << MsToS(SToMin(x)) << " minute\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milisecunde =" << MsToS(SToH(x)) << " ore\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milisecunde =" << MsToS(SToD(x)) << " zile\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milisecunde =" << MsToS(SToW(x)) << " saptamani\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milisecunde =" << MsToS(SToM(x)) << " luni\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milisecunde =" << MsToS(SToY(x)) << " ani\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			default:
+				system("cls");
+				cout << "alegere incorecta" << endl;
+				break;
+			}
 			break;
 		case 5:
 			system("cls");
