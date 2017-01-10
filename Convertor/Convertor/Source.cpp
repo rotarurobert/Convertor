@@ -313,6 +313,56 @@ long double MsToS(long double x)
 	x = x*0.001;
 	return x;
 }
+long double FthToMs(long double x)
+{
+	x = x*0.000084667;
+	return x;
+}
+long double KmhToMs(long double x)
+{
+	x = x*0.27777778;
+	return x;
+}
+long double MhToMs(long double x)
+{
+	x = x*0.000277778;
+	return x;
+}
+long double MphToMs(long double x)
+{
+	x = x*0.44704;
+	return x;
+}
+long double YdhToMs(long double x)
+{
+	x = x*0.000254;
+	return x;
+}
+long double MsToFth(long double x)
+{
+	x = x*11810.977122137316;
+	return x;
+}
+long double MsToKmh(long double x)
+{
+	x = x*3.5999999712000004;
+	return x;
+}
+long double MsToMh(long double x)
+{
+	x = x*3599.9971200023037;
+	return x;
+}
+long double MsToMph(long double x)
+{
+	x = x*2.2369362920544025;
+	return x;
+}
+long double MsToYdh(long double x)
+{
+	x = x*3937.0078740157483;
+	return x;
+}
 int main()
 {
 	int option,ok=1,option1,option2,option3;
@@ -2382,11 +2432,409 @@ int main()
 			system("cls");
 			cout << "Viteza" << endl;
 			cout << "Alege unitatea de masura:\n";
+			cout << "1.Metru pe secunda\n";
+			cout << "2.Metru pe ora\n";
+			cout << "3.Picior pe ora\n";
+			cout << "4.Kilometru pe ora\n";
+			cout << "5.Yard pe ora\n";
+			cout << "6.Mila pe ora\n";
+			cin >> option1;
+			switch (option1)
+			{
+			case 1:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru pe ora\n";
+				cout << "2.Picior pe ora\n";
+				cout << "3.Kilometru pe ora\n";
+				cout << "4.Yard pe ora\n";
+				cout << "5.Mila pe ora\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii pe secunda =" << MsToMh(x) << " metrii pe ora\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii pe secunda =" << MsToFth(x) << " piciore pe ora\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii pe secunda =" << MsToKmh(x) << " kilometrii pe ora\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii pe secunda =" << MsToYdh(x) << " yarzi pe ora\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii pe secunda =" << MsToMph(x) << " mile pe ora\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 2:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru pe secunda\n";
+				cout << "2.Picior pe ora\n";
+				cout << "3.Kilometru pe ora\n";
+				cout << "4.Yard pe ora\n";
+				cout << "5.Mila pe ora\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii pe ora =" << MhToMs(x) << " metrii pe secunda\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii pe ora =" << MhToMs(MsToFth(x)) << " piciore pe ora\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii pe ora =" << MhToMs(MsToKmh(x)) << " kilometrii pe ora\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii pe ora =" << MhToMs(MsToYdh(x)) << " yarzi pe ora\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " metrii pe ora =" << MhToMs(MsToMph(x)) << " mile pe ora\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 3:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru pe secunda\n";
+				cout << "2.Metru pe ora\n";
+				cout << "3.Kilometru pe ora\n";
+				cout << "4.Yard pe ora\n";
+				cout << "5.Mila pe ora\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare pe ora =" << FthToMs(x) << " metrii pe secunda\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare pe ora =" << FthToMs(MsToMh(x)) << " metrii pe ora\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare pe ora =" << FthToMs(MsToKmh(x)) << " kilometrii pe ora\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare pe ora =" << FthToMs(MsToYdh(x)) << " yarzi pe ora\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " picioare pe ora =" << FthToMs(MsToMph(x)) << " mile pe ora\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 4:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru pe secunda\n";
+				cout << "2.Metru pe ora\n";
+				cout << "3.Picior pe ora\n";
+				cout << "4.Yard pe ora\n";
+				cout << "5.Mila pe ora\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilometrii pe ora =" << KmhToMs(x) << " metrii pe secunda\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilometrii pe ora =" << KmhToMs(MsToMh(x)) << " metrii pe ora\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilometrii pe ora =" << KmhToMs(MsToFth(x)) << " piciore pe ora\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilometrii pe ora =" << KmhToMs(MsToYdh(x)) << " yarzi pe ora\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilometrii pe ora =" << KmhToMs(MsToMph(x)) << " mile pe ora\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 5:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru pe secunda\n";
+				cout << "2.Metru pe ora\n";
+				cout << "3.Picior pe ora\n";
+				cout << "4.Kilometru pe ora\n";
+				cout << "5.Mila pe ora\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi pe ora =" << YdhToMs(x) << " yarzi pe ora\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi pe ora =" << YdhToMs(MsToMh(x)) << " metrii pe ora\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi pe ora =" << YdhToMs(MsToFth(x)) << " piciore pe ora\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi pe ora =" << YdhToMs(MsToKmh(x)) << " kilometrii pe ora\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " yarzi pe ora =" << YdhToMs(MsToMph(x)) << " mile pe ora\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 6:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Metru pe secunda\n";
+				cout << "2.Metru pe ora\n";
+				cout << "3.Picior pe ora\n";
+				cout << "4.Kilometru pe ora\n";
+				cout << "5.Yard pe ora\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mile pe ora =" << MphToMs(x) << " mile pe ora\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mile pe ora =" << MphToMs(MsToMh(x)) << " metrii pe ora\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mile pe ora =" << MphToMs(MsToFth(x)) << " piciore pe ora\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mile pe ora =" << MphToMs(MsToKmh(x)) << " kilometrii pe ora\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mile pe ora =" << MphToMs(MsToYdh(x)) << " yarzi pe ora\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			default:
+				system("cls");
+				cout << "alegere incorecta" << endl;
+				break;
+			}
 			break;
 		case 6:
 			system("cls");
 			cout << "Temperatura" << endl;
 			cout << "Alege unitatea de masura:\n";
+			cout << "1.Grad Celsius\n";
+			cout << "2.Grad Fahrenheit\n";
+			cout << "3.Grad Kelvin\n";
+			cout << "4.Grade Rankine\n";
+			cin >> option1;
+			switch (option1)
+			{
+			case 1:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Grad Fahrenheit\n";
+				cout << "2.Grad Kelvin\n";
+				cout << "3.Grade Rankine\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " grade Celsius =" << (x*1.8)+32 << " grade Fahrenheit\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " grade Celsius =" << x+ 273.15 << " grade Kelvin\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " grade Celsius =" << x+ 459.67 << " grade Rankine\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 2:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Grad Celsius\n";
+				cout << "2.Grad Kelvin\n";
+				cout << "3.Grade Rankine\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " grade Fahrenheit =" << (x-32)/1.8 << " grade Celsius\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " grade Fahrenheit =" << (x+ 459.67)* 0.555555555555555 << " grade Kelvin\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " grade Fahrenheit =" << x+ 459.67 << " grade Rankine\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 3:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Grad Celsius\n";
+				cout << "2.Grad Fahrenheit\n";
+				cout << "3.Grade Rankine\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " grade Kelvin =" << x- 273.15 << " grade Celsius\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " grade Kelvin =" << (x*1.8)- 459.67 << " grade Fahrenheit\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " grade Kelvin =" << x*1.8 << " grade Rankine\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break; 
+			case 4:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Grad Celsius\n";
+				cout << "2.Grad Fahrenheit\n";
+				cout << "3.Grad Kelvin\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " grade Rankine =" << (x- 491.67)*0.555555555555555 << " grade Celsius\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " grade Rankine =" << x- 459.67 << " grade Fahrenheit\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " grade Rankine =" << x*0.555555555555555 << " grade Kelvin\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			default:
+				system("cls");
+				cout << "alegere incorecta" << endl;
+				break;
+			}
 			break;
 		case 7:
 			system("cls");
