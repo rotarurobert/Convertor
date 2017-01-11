@@ -423,6 +423,66 @@ long double KgToT(long double x)
 	x = x*0.001;
 	return x;
 }
+long double JToKj(long double x)
+{
+	x = x*0.001;
+	return x;
+}
+long double JToCal(long double x)
+{
+	x = x*0.23884589662749595;
+	return x;
+}
+long double JToKcal(long double x)
+{
+	x = x*0.00023884589662749592;
+	return x;
+}
+long double JToWh(long double x)
+{
+	x = x*0.0002777777777777778;
+	return x;
+}
+long double JToKwh(long double x)
+{
+	x = x/ 3600000;
+	return x;
+}
+long double JToFlb(long double x)
+{
+	x = x*0.7375621492772656;
+	return x;
+}
+long double KjToJ(long double x)
+{
+	x = x * 1000;
+	return x;
+}
+long double CalToJ(long double x)
+{
+	x = x*4.1868;
+	return x;
+}
+long double KcalToJ(long double x)
+{
+	x = x*4186.8;
+	return x;
+}
+long double WhToJ(long double x)
+{
+	x = x * 3600;
+	return x;
+}
+long double KwhToJ(long double x)
+{
+	x = x * 3600000;
+	return x;
+}
+long double FlbToJ(long double x)
+{
+	x = x*1.3558179483314;
+	return x;
+}
 int main()
 {
 	int option,ok=1,option1,option2,option3;
@@ -3256,6 +3316,272 @@ int main()
 			system("cls");
 			cout << "Energie" << endl;
 			cout << "Alege unitatea de masura:\n";
+			cout << "1.Jouli(watt-secunda)\n";
+			cout << "2.Calorie\n";
+			cout << "3.Kilojouli\n";
+			cout << "4.Kilocalorie\n";
+			cout << "5.Watt-ora\n";
+			cout << "6.Kilowatt-ora\n";
+			cin >> option1;
+			switch (option1)
+			{
+			case 1:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Calorie\n";
+				cout << "2.Kilojouli\n";
+				cout << "3.Kilocalorie\n";
+				cout << "4.Watt-ora\n";
+				cout << "5.Kilowatt-ora\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " jouli =" << JToCal(x) << " calorii\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " jouli =" << JToKj(x) << " kilojouli\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " jouli =" << JToKcal(x) << " kilocalorii\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " jouli =" << JToWh(x) << " watt-ora\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " jouli =" << JToKwh(x) << " kilowatt-ora\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 2:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Jouli(watt-secunda)\n";
+				cout << "2.Kilojouli\n";
+				cout << "3.Kilocalorie\n";
+				cout << "4.Watt-ora\n";
+				cout << "5.Kilowatt-ora\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " calorii =" << CalToJ(x) << " jouli\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " calorii =" << CalToJ(JToKj(x)) << " kilojouli\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " calorii =" << CalToJ(JToKcal(x)) << " kilocalorii\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " calorii =" << CalToJ(JToWh(x) )<< " watt-ora\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " calorii =" << CalToJ(JToKwh(x)) << " kilowatt-ora\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 3:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Jouli(watt-secunda)\n";
+				cout << "2.Calorie\n";
+				cout << "3.Kilocalorie\n";
+				cout << "4.Watt-ora\n";
+				cout << "5.Kilowatt-ora\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilojouli =" << KjToJ(x) << " jouli\n";
+					break;
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilojouli =" << KjToJ(JToCal(x)) << " calorii\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilojouli =" << KjToJ(JToKcal(x)) << " kilocalorii\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilojouli =" << KjToJ(JToWh(x)) << " watt-ora\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilojouli =" << KjToJ(JToKwh(x)) << " kilowatt-ora\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 4:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Jouli(watt-secunda)\n";
+				cout << "2.Calorie\n";
+				cout << "3.Kilojouli\n";
+				cout << "4.Watt-ora\n";
+				cout << "5.Kilowatt-ora\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilocalorii =" << KcalToJ(x) << " jouli\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilocalorii =" << KcalToJ(JToCal(x)) << " calorii\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilocalorii =" << KcalToJ(JToKj(x)) << " kilojouli\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilocalorii =" << KcalToJ(JToWh(x)) << " watt-ora\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilocalorii =" << KcalToJ(JToKwh(x)) << " kilowatt-ora\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 5:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Jouli(watt-secunda)\n";
+				cout << "2.Calorie\n";
+				cout << "3.Kilojouli\n";
+				cout << "4.Kilocalorie\n";
+				cout << "5.Kilowatt-ora\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " watt-ora =" << WhToJ(x) << " jouli\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " watt-ora =" << WhToJ(JToCal(x)) << " calorii\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " watt-ora =" << WhToJ(JToKj(x)) << " kilojouli\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " watt-ora =" << WhToJ(JToKcal(x)) << " kilocalorii\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " watt-ora =" << WhToJ(JToKwh(x)) << " kilowatt-ora\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 6:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Jouli(watt-secunda)\n";
+				cout << "2.Calorie\n";
+				cout << "3.Kilojouli\n";
+				cout << "4.Kilocalorie\n";
+				cout << "5.Watt-ora\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilowatt-ora =" << KwhToJ(x) << " jouli\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilowatt-ora =" << KwhToJ(JToCal(x)) << " calorii\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilowatt-ora =" << KwhToJ(JToKj(x)) << " kilojouli\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilowatt-ora =" << KwhToJ(JToKcal(x)) << " kilocalorii\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilowatt-ora =" << KwhToJ(JToWh(x)) << " watt-ora\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			default:
+				system("cls");
+				cout << "alegere incorecta" << endl;
+				break;
+			}
 			break;
 		case 9:
 			system("cls");
