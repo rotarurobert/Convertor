@@ -363,6 +363,66 @@ long double MsToYdh(long double x)
 	x = x*3937.0078740157483;
 	return x;
 }
+long double GToKg(long double x)
+{
+	x = x*0.001;
+	return x;
+}
+long double LbToKg(long double x)
+{
+	x = x*0.453592;
+	return x;
+}
+long double MgToKg(long double x)
+{
+	x = x*0.000001;
+	return x;
+}
+long double OzToKg(long double x)
+{
+	x = x*0.0283495;
+	return x;
+}
+long double SToKg(long double x)
+{
+	x = x*14.593903;
+	return x;
+}
+long double TToKg(long double x)
+{
+	x = x * 1000;
+	return x;
+}
+long double KgToG(long double x)
+{
+	x = x * 1000;
+	return x;
+}
+long double KgToLb(long double x)
+{
+	x = x*2.2046244201837775;
+	return x;
+}
+long double KgToMg(long double x)
+{
+	x = x * 1000000;
+	return x;
+}
+long double KgToOz(long double x)
+{
+	x = x*35.27399072294044;
+	return x;
+}
+long double KgToS(long double x)
+{
+	x = x*0.06852176556196105;
+	return x;
+}
+long double KgToT(long double x)
+{
+	x = x*0.001;
+	return x;
+}
 int main()
 {
 	int option,ok=1,option1,option2,option3;
@@ -2840,6 +2900,357 @@ int main()
 			system("cls");
 			cout << "Masa" << endl;
 			cout << "Alege unitatea de masura:\n";
+			cout << "1.Kilogram\n";
+			cout << "2.Gram\n";
+			cout << "3.Miligram\n";
+			cout << "4.Tona\n";
+			cout << "5.Funt\n";
+			cout << "6.Uncie\n";
+			cout << "7.Slug\n";
+			cin >> option1;
+			switch (option1)
+			{
+			case 1:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Gram\n";
+				cout << "2.Miligram\n";
+				cout << "3.Tona\n";
+				cout << "4.Funt\n";
+				cout << "5.Uncie\n";
+				cout << "6.Slug\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilograme =" << KgToG(x) << " grame\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilograme =" << KgToMg(x) << " miligrame\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilograme =" << KgToT(x) << " tone\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilograme =" << KgToLb(x) << " funte\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilograme =" << KgToOz(x) << " uncii\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilograme =" << KgToS(x) << " slug\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 2:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Kilogram\n";
+				cout << "2.Miligram\n";
+				cout << "3.Tona\n";
+				cout << "4.Funt\n";
+				cout << "5.Uncie\n";
+				cout << "6.Slug\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " grame =" << GToKg(x) << " kilograme\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " grame =" << GToKg(KgToMg(x)) << " miligrame\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " grame =" << GToKg(KgToT(x)) << " tone\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " grame =" << GToKg(KgToLb(x)) << " funte\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " grame =" << GToKg(KgToOz(x)) << " uncii\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " grame =" << GToKg(KgToS(x)) << " slug\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 3:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Kilogram\n";
+				cout << "2.Gram\n";
+				cout << "3.Tona\n";
+				cout << "4.Funt\n";
+				cout << "5.Uncie\n";
+				cout << "6.Slug\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " miligrame =" << MgToKg(x) << " kilograme\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " miligrame =" << MgToKg(KgToG(x)) << " grame\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " miligrame =" << MgToKg(KgToT(x)) << " tone\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " miligrame =" << MgToKg(KgToLb(x)) << " funte\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " miligrame =" << MgToKg(KgToOz(x)) << " uncii\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " miligrame =" << MgToKg(KgToS(x)) << " slug\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 4:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Kilogram\n";
+				cout << "2.Gram\n";
+				cout << "3.Miligram\n";
+				cout << "4.Funt\n";
+				cout << "5.Uncie\n";
+				cout << "6.Slug\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " tone =" << TToKg(x) << " kilograme\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " tone =" << TToKg(KgToG(x)) << " grame\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " tone =" << TToKg(KgToMg(x)) << " miligrame\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " tone =" << TToKg(KgToLb(x)) << " funte\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " tone =" << TToKg(KgToOz(x)) << " uncii\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " tone =" << TToKg(KgToS(x)) << " slug\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 5:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Kilogram\n";
+				cout << "2.Gram\n";
+				cout << "3.Miligram\n";
+				cout << "4.Tona\n";
+				cout << "5.Uncie\n";
+				cout << "6.Slug\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " funte =" << LbToKg(x) << " kilograme\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " funte =" << LbToKg(KgToG(x)) << " grame\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " funte =" << LbToKg(KgToMg(x)) << " miligrame\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " funte =" << LbToKg(KgToT(x)) << " tone\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " funte =" << LbToKg(KgToOz(x)) << " uncii\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " funte =" << LbToKg(KgToS(x)) << " slug\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 6:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Kilogram\n";
+				cout << "2.Gram\n";
+				cout << "3.Miligram\n";
+				cout << "4.Tona\n";
+				cout << "5.Funt\n";
+				cout << "6.Slug\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " uncii =" << OzToKg(x) << " kilograme\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " uncii =" << OzToKg(KgToG(x)) << " grame\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " uncii =" << OzToKg(KgToMg(x)) << " miligrame\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " uncii =" << OzToKg(KgToT(x)) << " tone\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " uncii =" << OzToKg(KgToLb(x)) << " funte\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " uncii =" << OzToKg(KgToS(x)) << " slug\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 7:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Kilogram\n";
+				cout << "2.Gram\n";
+				cout << "3.Miligram\n";
+				cout << "4.Tona\n";
+				cout << "5.Funt\n";
+				cout << "6.Uncie\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " slug =" << SToKg(x) << " kilograme\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " slug =" << SToKg(KgToG(x)) << " grame\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " slug =" << SToKg(KgToMg(x)) << " miligrame\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " slug =" << SToKg(KgToT(x)) << " tone\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " slug =" << SToKg(KgToLb(x)) << " funte\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " slug =" << SToKg(KgToOz(x)) << " uncii\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			default:
+				system("cls");
+				cout << "alegere incorecta" << endl;
+				break;
+			}
 			break;
 		case 8:
 			system("cls");
