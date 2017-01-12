@@ -483,6 +483,96 @@ long double FlbToJ(long double x)
 	x = x*1.3558179483314;
 	return x;
 }
+long double PaToAtm(long double x)
+{
+	x = x*0.000009869205998632101;
+	return x;
+}
+long double PaToBar(long double x)
+{
+	x = x*0.000010204081632653061;
+	return x;
+}
+long double PaToKpa(long double x)
+{
+	x = x*0.001;
+	return x;
+}
+long double PaToMbar(long double x)
+{
+	x = x*0.01020408163265306;
+	return x;
+}
+long double PaToMmhg(long double x)
+{
+	x = x*0.007500616827044659;
+	return x;
+}
+long double PaToMmh2o(long double x)
+{
+	x = x*0.1020408163265306;
+	return x;
+}
+long double PaToMpa(long double x)
+{
+	x = x*0.000001;
+	return x;
+}
+long double PaToPsi(long double x)
+{
+	x = x*0.00014503773773017476;
+	return x;
+}
+long double PaToTorr(long double x)
+{
+	x = x*0.007500616827044659;
+	return x;
+}
+long double AtmToPa(long double x)
+{
+	x = x*101325.2738;
+	return x;
+}
+long double BarToPa(long double x)
+{
+	x = x * 98000;
+	return x;
+}
+long double KpaToPa(long double x)
+{
+	x = x * 1000;
+	return x;
+}
+long double MbarToPa(long double x)
+{
+	x = x * 98;
+	return x;
+}
+long double MmhgToPa(long double x)
+{
+	x = x*133.322368421;
+	return x;
+}
+long double Mmh2oToPa(long double x)
+{
+	x = x*9.8;
+	return x;
+}
+long double MpaToPa(long double x)
+{
+	x = x * 1000000;
+	return x;
+}
+long double PsiToPa(long double x)
+{
+	x = x*6894.75729317;
+	return x;
+}
+long double TorrToPa(long double x)
+{
+	x = x*133.322368421;
+	return x;
+}
 int main()
 {
 	int option,ok=1,option1,option2,option3;
@@ -3587,6 +3677,685 @@ int main()
 			system("cls");
 			cout << "Presiune" << endl;
 			cout << "Alege unitatea de masura:\n";
+			cout << "1.Pascal\n";
+			cout << "2.Atmosfera\n";
+			cout << "3.Kilopascal\n";
+			cout << "4.Milibar\n";
+			cout << "5.Milimetru coloana de mercur\n";
+			cout << "6.Milimetru coloana de apa\n";
+			cout << "7.Megapascal\n";
+			cout << "8.Psi\n";
+			cout << "9.Torr\n";
+			cout << "10.Bar\n";
+			cin >> option1;
+			switch (option1)
+			{
+			case 1:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Atmosfera\n";
+				cout << "2.Kilopascal\n";
+				cout << "3.Milibar\n";
+				cout << "4.Milimetru coloana de mercur\n";
+				cout << "5.Milimetru coloana de apa\n";
+				cout << "6.Megapascal\n";
+				cout << "7.Psi\n";
+				cout << "8.Torr\n";
+				cout << "9.Bar\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " pascali =" << PaToAtm(x) << " atmosfere\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " pascali =" << PaToKpa(x) << " kilopascali\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " pascali =" << PaToMbar(x) << " milibari\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " pascali =" << PaToMmhg(x) << " mmHg\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " pascali =" << PaToMmh2o(x) << " mmH2O\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " pascali =" << PaToMpa(x) << " megapascali\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " pascali =" << PaToPsi(x) << " psi\n";
+					break;
+				case 8:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " pascali =" << PaToTorr(x) << " torr\n";
+					break;
+				case 9:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " pascali =" << PaToBar(x) << " bar\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 2:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Pascal\n";
+				cout << "2.Kilopascal\n";
+				cout << "3.Milibar\n";
+				cout << "4.Milimetru coloana de mercur\n";
+				cout << "5.Milimetru coloana de apa\n";
+				cout << "6.Megapascal\n";
+				cout << "7.Psi\n";
+				cout << "8.Torr\n";
+				cout << "9.Bar\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " atmosfere =" << AtmToPa(x) << " pascali\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " atmosfere =" << AtmToPa(PaToKpa(x)) << " kilopascali\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " atmosfere =" << AtmToPa(PaToMbar(x)) << " milibari\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " atmosfere =" << AtmToPa(PaToMmhg(x)) << " mmHg\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " atmosfere =" << AtmToPa(PaToMmh2o(x)) << " mmH2O\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " atmosfere ="<< AtmToPa(PaToMpa(x)) << " megapascali\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " atmosfere =" << AtmToPa(PaToPsi(x)) << " psi\n";
+					break;
+				case 8:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " atmosfere =" << AtmToPa(PaToTorr(x)) << " torr\n";
+					break;
+				case 9:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " atmosfere =" << AtmToPa(PaToBar(x)) << " bar\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 3:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Pascal\n";
+				cout << "2.Atmosfera\n";
+				cout << "3.Milibar\n";
+				cout << "4.Milimetru coloana de mercur\n";
+				cout << "5.Milimetru coloana de apa\n";
+				cout << "6.Megapascal\n";
+				cout << "7.Psi\n";
+				cout << "8.Torr\n";
+				cout << "9.Bar\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilopascali =" << KpaToPa(x) << " pascali\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilopascali =" << KpaToPa(PaToAtm(x)) << " atmosfere\n";
+					break;
+
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilopascali =" << KpaToPa(PaToMbar(x)) << " milibari\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilopascali =" << KpaToPa(PaToMmhg(x)) << " mmHg\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilopascali =" << KpaToPa(PaToMmh2o(x)) << " mmH2O\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilopascali =" << KpaToPa(PaToMpa(x)) << " megapascali\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilopascali =" << KpaToPa(PaToPsi(x) )<< " psi\n";
+					break;
+				case 8:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilopascali ="<< KpaToPa(PaToTorr(x)) << " torr\n";
+					break;
+				case 9:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " kilopascali =" << KpaToPa(PaToBar(x)) << " bar\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 4:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Pascal\n";
+				cout << "2.Atmosfera\n";
+				cout << "3.Kilopascal\n";
+				cout << "4.Milimetru coloana de mercur\n";
+				cout << "5.Milimetru coloana de apa\n";
+				cout << "6.Megapascal\n";
+				cout << "7.Psi\n";
+				cout << "8.Torr\n";
+				cout << "9.Bar\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milibari =" << MbarToPa(x) << " pascali\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milibari =" << MbarToPa(PaToAtm(x)) << " atmosfere\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milibari =" << MbarToPa(PaToKpa(x)) << " kilopascali\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milibari =" << MbarToPa(PaToMmhg(x)) << " mmHg\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milibari =" << MbarToPa(PaToMmh2o(x)) << " mmH2O\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milibari =" << MbarToPa(PaToMpa(x)) << " megapascali\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milibari =" << MbarToPa(PaToPsi(x)) << " psi\n";
+					break;
+				case 8:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milibari =" << MbarToPa(PaToTorr(x)) << " torr\n";
+					break;
+				case 9:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " milibari =" << MbarToPa(PaToBar(x)) << " bar\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 5:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Pascal\n";
+				cout << "2.Atmosfera\n";
+				cout << "3.Kilopascal\n";
+				cout << "4.Milibar\n";
+				cout << "5.Milimetru coloana de apa\n";
+				cout << "6.Megapascal\n";
+				cout << "7.Psi\n";
+				cout << "8.Torr\n";
+				cout << "9.Bar\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mmHg =" << MmhgToPa(x) << " pascali\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mmHg =" << MmhgToPa(PaToAtm(x)) << " atmosfere\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mmHg =" << MmhgToPa(PaToKpa(x)) << " kilopascali\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mmHg =" << MmhgToPa(PaToMbar(x)) << " milibari\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mmHg =" << MmhgToPa(PaToMmh2o(x)) << " mmH2O\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mmHg =" << MmhgToPa(PaToMpa(x)) << " megapascali\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mmHg =" << MmhgToPa(PaToPsi(x)) << " psi\n";
+					break;
+				case 8:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mmHg =" << MmhgToPa(PaToTorr(x)) << " torr\n";
+					break;
+				case 9:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mmHg =" << MmhgToPa(PaToBar(x)) << " bar\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 6:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Pascal\n";
+				cout << "2.Atmosfera\n";
+				cout << "3.Kilopascal\n";
+				cout << "4.Milibar\n";
+				cout << "5.Milimetru coloana de mercur\n";
+				cout << "6.Megapascal\n";
+				cout << "7.Psi\n";
+				cout << "8.Torr\n";
+				cout << "9.Bar\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mmH2O =" << Mmh2oToPa(x) << " pascali\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mmH2O =" << Mmh2oToPa(PaToAtm(x)) << " atmosfere\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mmH2O =" << Mmh2oToPa(PaToKpa(x)) << " kilopascali\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mmH2O =" << Mmh2oToPa(PaToMbar(x)) << " milibari\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mmH2O =" << Mmh2oToPa(PaToMmhg(x)) << " mmHg\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mmH2O =" << Mmh2oToPa(PaToMpa(x)) << " megapascali\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mmH2O =" << Mmh2oToPa(PaToPsi(x)) << " psi\n";
+					break;
+				case 8:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mmH2O =" << Mmh2oToPa(PaToTorr(x)) << " torr\n";
+					break;
+				case 9:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " mmH2O =" << Mmh2oToPa(PaToBar(x)) << " bar\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 7:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Pascal\n";
+				cout << "2.Atmosfera\n";
+				cout << "3.Kilopascal\n";
+				cout << "4.Milibar\n";
+				cout << "5.Milimetru coloana de mercur\n";
+				cout << "6.Milimetru coloana de apa\n";
+				cout << "7.Psi\n";
+				cout << "8.Torr\n";
+				cout << "9.Bar\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " megapascali =" << MpaToPa(x) << " pascali\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " megapascali =" << MpaToPa(PaToAtm(x)) << " atmosfere\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " megapascali =" << MpaToPa(PaToKpa(x)) << " kilopascali\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " megapascali =" << MpaToPa(PaToMbar(x)) << " milibari\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " megapascali =" << MpaToPa(PaToMmhg(x)) << " mmHg\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " megapascali =" << MpaToPa(PaToMmh2o(x)) << " mmH2O\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " megapascali =" << MpaToPa(PaToPsi(x)) << " psi\n";
+					break;
+				case 8:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " megapascali =" << MpaToPa(PaToTorr(x)) << " torr\n";
+					break;
+				case 9:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " megapascali =" << MpaToPa(PaToBar(x)) << " bar\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 8:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Pascal\n";
+				cout << "2.Atmosfera\n";
+				cout << "3.Kilopascal\n";
+				cout << "4.Milibar\n";
+				cout << "5.Milimetru coloana de mercur\n";
+				cout << "6.Milimetru coloana de apa\n";
+				cout << "7.Megapascal\n";
+				cout << "8.Torr\n";
+				cout << "9.Bar\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " psi =" << PsiToPa(x) << " pascali\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " psi =" << PsiToPa(PaToAtm(x)) << " atmosfere\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " psi =" << PsiToPa(PaToKpa(x)) << " kilopascali\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " psi =" << PsiToPa(PaToMbar(x)) << " milibari\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " psi =" << PsiToPa(PaToMmhg(x)) << " mmHg\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " psi =" << PsiToPa(PaToMmh2o(x)) << " mmH2O\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " psi =" << PsiToPa(PaToMpa(x)) << " megapascali\n";
+					break;
+				case 8:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " psi =" << PsiToPa(PaToTorr(x)) << " torr\n";
+					break;
+				case 9:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " psi =" << PsiToPa(PaToBar(x)) << " bar\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 9:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Pascal\n";
+				cout << "2.Atmosfera\n";
+				cout << "3.Kilopascal\n";
+				cout << "4.Milibar\n";
+				cout << "5.Milimetru coloana de mercur\n";
+				cout << "6.Milimetru coloana de apa\n";
+				cout << "7.Megapascal\n";
+				cout << "8.Psi\n";
+				cout << "9.Bar\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " torr =" << TorrToPa(x) << " pascali\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " torr =" << TorrToPa(PaToAtm(x)) << " atmosfere\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " torr =" << TorrToPa(PaToKpa(x)) << " kilopascali\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " torr =" << TorrToPa(PaToMbar(x)) << " milibari\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " torr =" << TorrToPa(PaToMmhg(x)) << " mmHg\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " torr =" << TorrToPa(PaToMmh2o(x)) << " mmH2O\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " torr =" << TorrToPa(PaToMpa(x)) << " megapascali\n";
+					break;
+				case 8:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " torr =" << TorrToPa(PaToPsi(x)) << " psi\n";
+					break;
+				case 9:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " torr =" << TorrToPa(PaToBar(x)) << " bar\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			case 10:
+				system("cls");
+				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
+				cout << "1.Pascal\n";
+				cout << "2.Atmosfera\n";
+				cout << "3.Kilopascal\n";
+				cout << "4.Milibar\n";
+				cout << "5.Milimetru coloana de mercur\n";
+				cout << "6.Milimetru coloana de apa\n";
+				cout << "7.Megapascal\n";
+				cout << "8.Psi\n";
+				cout << "9.Torr\n";
+				cin >> option2;
+				switch (option2)
+				{
+				case 1:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " bar =" << BarToPa(x) << " pascali\n";
+					break;
+				case 2:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " bar =" << BarToPa(PaToAtm(x)) << " atmosfere\n";
+					break;
+				case 3:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " bar =" << BarToPa(PaToKpa(x)) << " kilopascali\n";
+					break;
+				case 4:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " bar =" << BarToPa(PaToMbar(x)) << " milibari\n";
+					break;
+				case 5:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " bar =" << BarToPa(PaToMmhg(x)) << " mmHg\n";
+					break;
+				case 6:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " bar =" << BarToPa(PaToMmh2o(x)) << " mmH2O\n";
+					break;
+				case 7:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " bar =" << BarToPa(PaToMpa(x)) << " megapascali\n";
+					break;
+				case 8:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " bar =" << BarToPa(PaToPsi(x)) << " psi\n";
+					break;
+				case 9:
+					cout << "Introduceti valoarea:";
+					cin >> x;
+					cout << x << " bar =" << BarToPa(PaToTorr(x)) << " torr\n";
+					break;
+				default:
+					system("cls");
+					cout << "alegere incorecta" << endl;
+					break;
+				}
+				break;
+			default:
+				system("cls");
+				cout << "alegere incorecta" << endl;
+				break;
+			}
 			break;
 		case 10:
 			system("cls");
