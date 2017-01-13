@@ -4452,7 +4452,7 @@ int main()
 			cout << "Densitate" << endl;
 			cout << "Alege unitatea de masura:\n";
 			cout << "1.Kilogram pe metru cub/Gram pe litru\n";
-			cout << "2.Gram pe centimetru cub/Gram pe mililitru/Kilogram pe litru/Tonã pe metru cub\n";
+			cout << "2.Gram pe centimetru cub/Gram pe mililitru/Kilogram pe litru/Tona pe metru cub\n";
 			cout << "3.Gram pe metru cub/Miligram pe centimetru cub/Miligram pe litru\n";
 			cout << "4.Gram pe milimetru cub/Kilogram pe centimetru cub\n";
 			cout << "5.Funt pe picior cub\n";
@@ -4465,7 +4465,7 @@ int main()
 			case 1:
 				system("cls");
 				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
-				cout << "1.Gram pe centimetru cub/Gram pe mililitru/Kilogram pe litru/Tonã pe metru cub\n";
+				cout << "1.Gram pe centimetru cub/Gram pe mililitru/Kilogram pe litru/Tona pe metru cub\n";
 				cout << "2.Gram pe metru cub/Miligram pe centimetru cub/Miligram pe litru\n";
 				cout << "3.Gram pe milimetru cub/Kilogram pe centimetru cub\n";
 				cout << "4.Funt pe picior cub\n";
@@ -4574,7 +4574,7 @@ int main()
 				system("cls");
 				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
 				cout << "1.Kilogram pe metru cub/Gram pe litru\n";
-				cout << "2.Gram pe centimetru cub/Gram pe mililitru/Kilogram pe litru/Tonã pe metru cub\n";
+				cout << "2.Gram pe centimetru cub/Gram pe mililitru/Kilogram pe litru/Tona pe metru cub\n";
 				cout << "3.Gram pe milimetru cub/Kilogram pe centimetru cub\n";
 				cout << "4.Funt pe picior cub\n";
 				cout << "5.Uncie pe galon \n";
@@ -4628,7 +4628,7 @@ int main()
 				system("cls");
 				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
 				cout << "1.Kilogram pe metru cub/Gram pe litru\n";
-				cout << "2.Gram pe centimetru cub/Gram pe mililitru/Kilogram pe litru/Tonã pe metru cub\n";
+				cout << "2.Gram pe centimetru cub/Gram pe mililitru/Kilogram pe litru/Tona pe metru cub\n";
 				cout << "3.Gram pe metru cub/Miligram pe centimetru cub/Miligram pe litru\n";
 				cout << "4.Funt pe picior cub\n";
 				cout << "5.Uncie pe galon \n";
@@ -4682,7 +4682,7 @@ int main()
 				system("cls");
 				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
 				cout << "1.Kilogram pe metru cub/Gram pe litru\n";
-				cout << "2.Gram pe centimetru cub/Gram pe mililitru/Kilogram pe litru/Tonã pe metru cub\n";
+				cout << "2.Gram pe centimetru cub/Gram pe mililitru/Kilogram pe litru/Tona pe metru cub\n";
 				cout << "3.Gram pe metru cub/Miligram pe centimetru cub/Miligram pe litru\n";
 				cout << "4.Gram pe milimetru cub/Kilogram pe centimetru cub\n";
 				cout << "5.Uncie pe galon \n";
@@ -4736,7 +4736,7 @@ int main()
 				system("cls");
 				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
 				cout << "1.Kilogram pe metru cub/Gram pe litru\n";
-				cout << "2.Gram pe centimetru cub/Gram pe mililitru/Kilogram pe litru/Tonã pe metru cub\n";
+				cout << "2.Gram pe centimetru cub/Gram pe mililitru/Kilogram pe litru/Tona pe metru cub\n";
 				cout << "3.Gram pe metru cub/Miligram pe centimetru cub/Miligram pe litru\n";
 				cout << "4.Gram pe milimetru cub/Kilogram pe centimetru cub\n";
 				cout << "5.Funt pe picior cub\n";
@@ -4790,7 +4790,7 @@ int main()
 				system("cls");
 				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
 				cout << "1.Kilogram pe metru cub/Gram pe litru\n";
-				cout << "2.Gram pe centimetru cub/Gram pe mililitru/Kilogram pe litru/Tonã pe metru cub\n";
+				cout << "2.Gram pe centimetru cub/Gram pe mililitru/Kilogram pe litru/Tona pe metru cub\n";
 				cout << "3.Gram pe metru cub/Miligram pe centimetru cub/Miligram pe litru\n";
 				cout << "4.Gram pe milimetru cub/Kilogram pe centimetru cub\n";
 				cout << "5.Funt pe picior cub\n";
@@ -4844,7 +4844,7 @@ int main()
 				system("cls");
 				cout << "Alege unitatea de masura in care vrei sa transformi:\n";
 				cout << "1.Kilogram pe metru cub/Gram pe litru\n";
-				cout << "2.Gram pe centimetru cub/Gram pe mililitru/Kilogram pe litru/Tonã pe metru cub\n";
+				cout << "2.Gram pe centimetru cub/Gram pe mililitru/Kilogram pe litru/Tona pe metru cub\n";
 				cout << "3.Gram pe metru cub/Miligram pe centimetru cub/Miligram pe litru\n";
 				cout << "4.Gram pe milimetru cub/Kilogram pe centimetru cub\n";
 				cout << "5.Funt pe picior cub\n";
